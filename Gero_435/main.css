@@ -1,0 +1,121 @@
+body{
+  margin:0px;
+  background-color: #F4F4DC;
+  font-family: 'EB Garamond', serif;
+}
+@font-face{
+  font-family: "Bagiste";
+  src: url("Bagiste.otf");
+}
+h1{
+  margin:0px;
+  font-family:"Bagiste";
+}
+#header{
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  color: #331a00;
+  font-size: 3em;
+  text-shadow: 0px 0px 10px #ffffff;
+
+}
+
+#main{
+
+  width: 900px;
+  margin:auto;
+
+}
+#wrapper{
+  display: flex;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer{
+  background-color: #ACC7A5;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+
+}
+h2{
+  font-family:"Bagiste";
+  font-size:2em;
+}
+h3{
+
+  font-family:"Bagiste";
+}
+#navbar {
+  box-shadow: 0px 2px 5px black;
+  	z-index:1;
+    margin-bottom:100px;
+}
+
+#nav {
+  width: 400px;
+  margin:auto;
+  display: flex;
+}
+
+#nav a {
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  color: black;
+
+
+}
+
+#nav a:hover, #nav #active-nav {
+  color: black;
+  border-bottom: 2px solid black;
+  background:#ACC7A5;
+}
+#nav ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+
+}
+#nav li{
+  width: 200px;
+  text-align: center;
+  position: relative;
+}
+#nav > ul{
+  display:flex;
+  align-items: flex-start;
+}
+#nav ul ul{
+  position: absolute;
+  display: none;
+
+}
+#nav li:hover > ul{
+  display: block;
+  background-color: #C9DDD5;
+
+
+}
+
+
+
+@media (max-width: 767px){
+  #nav ul{
+    flex-direction:column;
+  }
+
+  #nav li{
+    width:auto;
+  }
+
+  #header{
+    position:static;
+  }
+}
